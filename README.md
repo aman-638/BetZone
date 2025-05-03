@@ -24,9 +24,6 @@ A mini betting dashboard with React frontend and Node.js backend. This platform 
 
 ![Login Page](screenshots/login.png)
 
-### 📊 Dashboard Page
-
-![Dashboard Page](screenshots/dashboard.png)
 
 ### 📁 Bet History Page
 
