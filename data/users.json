@@ -1,0 +1,16 @@
+[
+  {
+    "id": 2,
+    "username": "user1@bet.com",
+    "password": "$2b$10$o18z1Q9tHm5piBYsfVutuejq2gQYtIiDSqcV4Lp0dGmJ85wexvZeC",
+    "balance": 1261,
+    "createdAt": "2025-05-03T11:37:36.632Z"
+  },
+  {
+    "id": 3,
+    "username": "user@bet.com",
+    "password": "$2b$10$aRjIo98jPjfdl0Nl75vi7eK3anYa3sL/zR1dKWPzsitjaCD3vIZEi",
+    "balance": 1274.5,
+    "createdAt": "2025-05-03T11:50:47.555Z"
+  }
+]

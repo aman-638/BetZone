@@ -1,0 +1,97 @@
+[
+  {
+    "id": "1",
+    "league": "Premier League",
+    "sport": "Football",
+    "startTime": "2025-05-03T12:21:01.307Z",
+    "startingIn": "Starting in 45m",
+    "teams": {
+      "home": {
+        "name": "Arsenal",
+        "initial": "A",
+        "odds": 2.1
+      },
+      "away": {
+        "name": "Chelsea",
+        "initial": "C",
+        "odds": 1.85
+      }
+    }
+  },
+  {
+    "id": "2",
+    "league": "NBA",
+    "sport": "Basketball",
+    "startTime": "2025-05-03T13:36:01.307Z",
+    "startingIn": "Starting in 2h",
+    "teams": {
+      "home": {
+        "name": "Lakers",
+        "initial": "L",
+        "odds": 1.75
+      },
+      "away": {
+        "name": "Bulls",
+        "initial": "B",
+        "odds": 2.25
+      }
+    }
+  },
+  {
+    "id": "3",
+    "league": "Tennis Grand Slam",
+    "sport": "Tennis",
+    "startTime": "2025-05-03T14:36:01.307Z",
+    "startingIn": "Starting in 3h",
+    "teams": {
+      "home": {
+        "name": "Nadal",
+        "initial": "N",
+        "odds": 2.05
+      },
+      "away": {
+        "name": "Djokovic",
+        "initial": "D",
+        "odds": 1.9
+      }
+    }
+  },
+  {
+    "id": "4",
+    "league": "Premier League",
+    "sport": "Football",
+    "startTime": "2025-05-03T17:36:01.307Z",
+    "startingIn": "Starting in 6h",
+    "teams": {
+      "home": {
+        "name": "Liverpool",
+        "initial": "L",
+        "odds": 1.95
+      },
+      "away": {
+        "name": "Manchester City",
+        "initial": "M",
+        "odds": 2.05
+      }
+    }
+  },
+  {
+    "id": "5",
+    "league": "NHL",
+    "sport": "Hockey",
+    "startTime": "2025-05-03T16:36:01.307Z",
+    "startingIn": "Starting in 5h",
+    "teams": {
+      "home": {
+        "name": "Maple Leafs",
+        "initial": "M",
+        "odds": 2.15
+      },
+      "away": {
+        "name": "Bruins",
+        "initial": "B",
+        "odds": 1.85
+      }
+    }
+  }
+]
