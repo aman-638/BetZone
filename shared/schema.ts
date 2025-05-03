@@ -1,21 +1,20 @@
 import { z } from "zod";
 
-// MongoDB schemas for the application
-// Note: This file only defines the types and validation schemas
-// It doesn't actually create MongoDB collections (that would happen in a MongoDB connection file)
-
 // User schema
 export const userSchema = z.object({
   id: z.number(),
   username: z.string(),
   password: z.string(),
   balance: z.number().default(1250),
-  createdAt: z.string().or(z.date()).default(() => new Date().toISOString())
+  createdAt: z
+    .string()
+    .or(z.date())
+    .default(() => new Date().toISOString()),
 });
 
 export const insertUserSchema = userSchema.pick({
   username: true,
-  password: true
+  password: true,
 });
 
 export type InsertUser = z.infer<typeof insertUserSchema>;
@@ -32,15 +31,18 @@ export const matchSchema = z.object({
     home: z.object({
       name: z.string(),
       initial: z.string(),
-      odds: z.number()
+      odds: z.number(),
     }),
     away: z.object({
       name: z.string(),
       initial: z.string(),
-      odds: z.number()
-    })
+      odds: z.number(),
+    }),
   }),
-  createdAt: z.string().or(z.date()).default(() => new Date().toISOString())
+  createdAt: z
+    .string()
+    .or(z.date())
+    .default(() => new Date().toISOString()),
 });
 
 export type Match = z.infer<typeof matchSchema>;
@@ -58,7 +60,10 @@ export const betSchema = z.object({
   amount: z.number(),
   potentialWin: z.number(),
   status: z.enum(["PENDING", "WIN", "LOSE"]).default("PENDING"),
-  createdAt: z.string().or(z.date()).default(() => new Date().toISOString())
+  createdAt: z
+    .string()
+    .or(z.date())
+    .default(() => new Date().toISOString()),
 });
 
 export type Bet = z.infer<typeof betSchema>;
@@ -67,7 +72,7 @@ export type Bet = z.infer<typeof betSchema>;
 export const createBetSchema = z.object({
   matchId: z.string(),
   teamType: z.enum(["home", "away"]),
-  amount: z.number().min(5, "Minimum bet is $5")
+  amount: z.number().min(5, "Minimum bet is $5"),
 });
 
 export type CreateBetParams = z.infer<typeof createBetSchema>;

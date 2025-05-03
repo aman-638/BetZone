@@ -64,7 +64,7 @@ export function Sidebar() {
             onClick={() => scrollToSection("bet-history-section")}
           >
             <BarChart2 className="mr-3 h-5 w-5 text-gray-400 group-hover:text-accent" />
-            Statistics
+            Bet History
           </Button>
 
           <div className="pt-6">

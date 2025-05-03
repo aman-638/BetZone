@@ -9,35 +9,35 @@ export function MobileNavigation() {
   const scrollToSection = (elementId: string) => {
     const element = document.getElementById(elementId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
     <div className="md:hidden bg-secondary border-t border-gray-700 fixed bottom-0 left-0 right-0 z-40">
       <div className="grid grid-cols-4 h-16">
-        <button 
+        <button
           className="flex flex-col items-center justify-center text-accent"
-          onClick={() => setLocation('/')}
+          onClick={() => setLocation("/")}
         >
           <Home className="h-6 w-6" />
           <span className="text-xs mt-1">Home</span>
         </button>
-        <button 
+        <button
           className="flex flex-col items-center justify-center text-gray-400 hover:text-accent"
-          onClick={() => scrollToSection('bet-form-section')}
+          onClick={() => scrollToSection("bet-form-section")}
         >
           <ListChecks className="h-6 w-6" />
           <span className="text-xs mt-1">Bets</span>
         </button>
-        <button 
+        <button
           className="flex flex-col items-center justify-center text-gray-400 hover:text-accent"
-          onClick={() => scrollToSection('bet-history-section')}
+          onClick={() => scrollToSection("bet-history-section")}
         >
           <BarChart2 className="h-6 w-6" />
-          <span className="text-xs mt-1">Stats</span>
+          <span className="text-xs mt-1">History</span>
         </button>
-        <button 
+        <button
           className="flex flex-col items-center justify-center text-gray-400 hover:text-accent"
           onClick={() => logoutMutation.mutate()}
           disabled={logoutMutation.isPending}
